@@ -1,0 +1,32 @@
+body {
+    background-color: #fff;
+    font-size: 21px;
+    color: #000;
+    font-family: "Montserrat";
+}
+.wrapper{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main{
+    flex: 1 1 auto;
+}
+// font
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+@import "vendor/reset";
+@import "vendor/vars";
+
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/finans";
+@import "blocks/desiner";
+@import "blocks/practice";
+@import "blocks/why";
+@import "blocks/brends";
+@import "blocks/touch";
+@import "blocks/footer";
+@import "blocks/burger";

@@ -1,0 +1,78 @@
+
+
+.desiner {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.desiner__title {
+	font-style: normal;
+	font-weight: 700;
+	@include adaptiv-font(40,24);
+	line-height: 1.42;
+	letter-spacing: 0.2px;
+	color: #252B42;
+	margin-bottom: 10px;
+	margin-top: 170px;
+	@include breakpoint($mobile-bp){
+		margin-top: 100px;
+	}
+}
+.desiner__subtitle {
+	font-style: normal;
+	font-weight: 500;
+	@include adaptiv-font(14,10);
+	line-height: 1.43;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: #737373;
+	margin-bottom: 50px;
+}
+.desiner__inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+.desiner__cart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: all 0.2s linear;
+	&:hover{
+		transform: scale(1.1);
+	}
+	@include adaptiv-value(padding,30,10,1);
+	background-color: #fff;
+	margin-bottom: 10px;
+	width: 240px;
+	@include breakpoint($tablet-bp){
+		width: 49%;
+	}
+	@include breakpoint($mobile-bp){
+		width: 100%;
+	}
+}
+
+.desiner__icon {
+	margin-bottom: 10px;
+}
+.desiner__number {
+	font-style: normal;
+	font-weight: bold;
+	@include adaptiv-font(40,24);
+	line-height: 1.42;
+	letter-spacing: 0.2px;
+	color: #252B42;
+	margin-bottom: 10px;
+}
+.desiner__text {
+	font-style: normal;
+	font-weight: bold;
+	@include adaptiv-font(16,12);
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: 0.1px;
+	color: #737373;
+}

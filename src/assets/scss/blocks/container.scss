@@ -1,0 +1,33 @@
+[class*="__container"] {
+	max-width: 1090px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.section {
+	background-color: #FAFAFA;
+	// padding-top: 320px;
+	@include breakpoint($destop-bp){
+		// padding-top: 200px;
+	}
+	@include breakpoint($mobile-bp){
+		// padding-top: 200px;
+	}
+}
+
+@include breakpoint($destop-bp){
+	.finans__container{
+		max-width: 875px;
+	}
+}
+@include breakpoint($tablet-bp){
+	.finans__container{
+		max-width: 685px;
+	}
+}
+@include breakpoint($mobile-bp){
+	.finans__container{
+		max-width: 500px;
+	}
+}
